@@ -30,15 +30,20 @@ int main() {
 
 long Factorial(int no)
 {
-  int fac;
-  for (int i = no; i >= 1; i--) 
-      {
-        fac = fac * i;
-      }
-  return fac;
+  int x;
+  long fac = 1;
+  
+  for(x = no ; x >= 1 ; x--)
+    {
+      fac = fac * x;
+    }
+  
+  return fac; 
 }
 
-long nCr(int n, int r)
+long nCr(int n , int r)
 {
-  
+  long nCr = Factorial(n) / (Factorial(r) * Factorial(n-r));
+
+  return nCr;
 }
