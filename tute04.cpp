@@ -30,10 +30,9 @@ int main() {
 
 long Factorial(int no)
 {
-  int x;
   long fac = 1;
   
-  for(x = no ; x >= 1 ; x--)
+  for(int x = no ; x >= 1 ; x--)
     {
       fac = fac * x;
     }
